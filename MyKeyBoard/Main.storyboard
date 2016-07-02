@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dq4-vY-6n7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="RHQ-ry-gUO">
+            <objects>
+                <viewController id="dq4-vY-6n7" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ooW-tH-uK2"/>
+                        <viewControllerLayoutGuide type="bottom" id="vo0-Wf-m8g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3xf-hN-Nv9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xv2-hw-xNc">
+                                <rect key="frame" x="37" y="47" width="527" height="150"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="HzS-lq-Iab"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="rhj-yO-pvG"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dZG-gy-31F" appends="YES" id="kfn-b3-X11"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yf-MU-6Ou">
+                                <rect key="frame" x="137" y="20" width="46" height="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapDone:" destination="dq4-vY-6n7" eventType="touchUpInside" id="sYj-IE-e9w"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hBB-iK-DdM">
+                                <rect key="frame" x="244" y="156" width="40" height="39"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xv2-hw-xNc" firstAttribute="leading" secondItem="3xf-hN-Nv9" secondAttribute="leading" constant="37" id="Mn9-oA-Tr4"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Xv2-hw-xNc" secondAttribute="trailing" constant="36" id="QXO-pR-9Qg"/>
+                            <constraint firstItem="Xv2-hw-xNc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3xf-hN-Nv9" secondAttribute="leading" constant="37" id="bZE-Sh-P2l"/>
+                            <constraint firstItem="Xv2-hw-xNc" firstAttribute="top" secondItem="ooW-tH-uK2" secondAttribute="bottom" constant="27" id="hh4-Nl-EzT"/>
+                            <constraint firstItem="Xv2-hw-xNc" firstAttribute="top" secondItem="ooW-tH-uK2" secondAttribute="bottom" constant="27" id="iZV-qw-3dW"/>
+                            <constraint firstAttribute="trailing" secondItem="Xv2-hw-xNc" secondAttribute="trailing" constant="36" id="jlF-u5-JaL"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="hBB-iK-DdM" id="ium-zX-SeB"/>
+                        <outlet property="myTextView" destination="Xv2-hw-xNc" id="Hl7-tS-pik"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fo4-4H-5PF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer delaysTouchesEnded="NO" id="dZG-gy-31F">
+                    <connections>
+                        <action selector="tapS:" destination="dq4-vY-6n7" id="3Th-0T-vHM"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="577.5" y="163.73239436619718"/>
+        </scene>
+    </scenes>
+</document>

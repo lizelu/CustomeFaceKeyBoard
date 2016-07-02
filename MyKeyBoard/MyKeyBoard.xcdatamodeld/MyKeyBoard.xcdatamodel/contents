@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="HistoryImage" representedClassName="HistoryImage" syncable="YES">
+        <attribute name="headerImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="imageText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HistoryImage" positionX="-63" positionY="-18" width="128" height="90"/>
+    </elements>
+</model>
